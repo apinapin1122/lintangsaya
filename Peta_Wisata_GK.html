@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e1dfce8d2888dbeda080ae633888b7be {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e1dfce8d2888dbeda080ae633888b7be" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e1dfce8d2888dbeda080ae633888b7be = L.map(
+                "map_e1dfce8d2888dbeda080ae633888b7be",
+                {
+                    center: [-8.105407075578706, 110.56267304641216],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6a1bb87eb15fd019999dd37aba54c490 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e1dfce8d2888dbeda080ae633888b7be);
+        
+    
+            var heat_map_92f1ad818ff5fbf3dcdffee465b87fe7 = L.heatLayer(
+                [[-8.1843, 110.7102], [-8.19672, 110.7121], [-8.18104, 110.6836], [-8.15802, 110.63], [-8.18464, 110.6914], [-8.17457, 110.6621], [-8.14369, 110.6321], [-8.1216, 110.5213], [-8.08027, 110.5571], [-8.05375, 110.5678]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_e1dfce8d2888dbeda080ae633888b7be);
+        
+    
+            var marker_cluster_496c4e75e17074dd51b4ae5c5c29eb97 = L.markerClusterGroup(
+                {}
+            );
+            map_e1dfce8d2888dbeda080ae633888b7be.addLayer(marker_cluster_496c4e75e17074dd51b4ae5c5c29eb97);
+        
+    
+            var marker_fd751c4cb5446c0b82a584a86e393cd6 = L.marker(
+                [-8.1843, 110.7102],
+                {}
+            ).addTo(marker_cluster_496c4e75e17074dd51b4ae5c5c29eb97);
+        
+    
+        var popup_8072cfec8e11e008cbb23649535afe0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd629e5d7e14a63652c9b92c082d0083 = $(`<div id="html_fd629e5d7e14a63652c9b92c082d0083" style="width: 100.0%; height: 100.0%;">pantai wediombo: Balong, Kec. Girisubo, Kabupaten Gunungkidul</div>`)[0];
+                popup_8072cfec8e11e008cbb23649535afe0e.setContent(html_fd629e5d7e14a63652c9b92c082d0083);
+            
+        
+
+        marker_fd751c4cb5446c0b82a584a86e393cd6.bindPopup(popup_8072cfec8e11e008cbb23649535afe0e)
+        ;
+
+        
+    
+    
+            var marker_8000039a239081445d4000d5ef302099 = L.marker(
+                [-8.19672, 110.7121],
+                {}
+            ).addTo(marker_cluster_496c4e75e17074dd51b4ae5c5c29eb97);
+        
+    
+        var popup_6c37952b040121fc5d2db488e8f95298 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_72b5e246d8eceace865c5cd9d3fdfd50 = $(`<div id="html_72b5e246d8eceace865c5cd9d3fdfd50" style="width: 100.0%; height: 100.0%;">pantai jungwok: Pendowo, Jepitu, Kec. Girisubo, Kabupaten Gunungkidul</div>`)[0];
+                popup_6c37952b040121fc5d2db488e8f95298.setContent(html_72b5e246d8eceace865c5cd9d3fdfd50);
+            
+        
+
+        marker_8000039a239081445d4000d5ef302099.bindPopup(popup_6c37952b040121fc5d2db488e8f95298)
+        ;
+
+        
+    
+    
+            var marker_f83dc658305c2dbe7eaad8f2ab23ab07 = L.marker(
+                [-8.18104, 110.6836],
+                {}
+            ).addTo(marker_cluster_496c4e75e17074dd51b4ae5c5c29eb97);
+        
+    
+        var popup_6f4a66dd89a339e3ffb86c1f21541441 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_318207a3646c9fdac7dc19812b80f907 = $(`<div id="html_318207a3646c9fdac7dc19812b80f907" style="width: 100.0%; height: 100.0%;">pantai siung: Duwet, Purwodadi, Kec. Tepus, Kabupaten Gunungkidul</div>`)[0];
+                popup_6f4a66dd89a339e3ffb86c1f21541441.setContent(html_318207a3646c9fdac7dc19812b80f907);
+            
+        
+
+        marker_f83dc658305c2dbe7eaad8f2ab23ab07.bindPopup(popup_6f4a66dd89a339e3ffb86c1f21541441)
+        ;
+
+        
+    
+    
+            var marker_c31254951b5eb0c1d9f0d9dc85d8cada = L.marker(
+                [-8.15802, 110.63],
+                {}
+            ).addTo(marker_cluster_496c4e75e17074dd51b4ae5c5c29eb97);
+        
+    
+        var popup_72d599a36c319ddb8b8b918d077a112d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd72a8dd5ef0e9ef775e3071997f1219 = $(`<div id="html_fd72a8dd5ef0e9ef775e3071997f1219" style="width: 100.0%; height: 100.0%;">pantai watunene: Tepus, Kabupaten Gunungkidul</div>`)[0];
+                popup_72d599a36c319ddb8b8b918d077a112d.setContent(html_fd72a8dd5ef0e9ef775e3071997f1219);
+            
+        
+
+        marker_c31254951b5eb0c1d9f0d9dc85d8cada.bindPopup(popup_72d599a36c319ddb8b8b918d077a112d)
+        ;
+
+        
+    
+    
+            var marker_164c3a6d8bdc286850d97fab55c5cb5e = L.marker(
+                [-8.18464, 110.6914],
+                {}
+            ).addTo(marker_cluster_496c4e75e17074dd51b4ae5c5c29eb97);
+        
+    
+        var popup_64efc2904de6c62f44b1ede89d488857 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_995534ce56f7d0c69f4f96b3e8d6d6fb = $(`<div id="html_995534ce56f7d0c69f4f96b3e8d6d6fb" style="width: 100.0%; height: 100.0%;">bukit pengilon: Istimewa, Area Hutan, Purwodadi, Tepus, Kabupaten Gunungkidul</div>`)[0];
+                popup_64efc2904de6c62f44b1ede89d488857.setContent(html_995534ce56f7d0c69f4f96b3e8d6d6fb);
+            
+        
+
+        marker_164c3a6d8bdc286850d97fab55c5cb5e.bindPopup(popup_64efc2904de6c62f44b1ede89d488857)
+        ;
+
+        
+    
+    
+            var marker_fa9da8156b786b15eaffa0545371d137 = L.marker(
+                [-8.17457, 110.6621],
+                {}
+            ).addTo(marker_cluster_496c4e75e17074dd51b4ae5c5c29eb97);
+        
+    
+        var popup_cedd80e7c7d591e979659c8663380109 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c28a4d48074de12e126cd07b826c406 = $(`<div id="html_0c28a4d48074de12e126cd07b826c406" style="width: 100.0%; height: 100.0%;">Pantai Timang: Jl. Pantai Sel. Jawa, Pantai, Pulang Sawal, Kabupaten Gunungkidul</div>`)[0];
+                popup_cedd80e7c7d591e979659c8663380109.setContent(html_0c28a4d48074de12e126cd07b826c406);
+            
+        
+
+        marker_fa9da8156b786b15eaffa0545371d137.bindPopup(popup_cedd80e7c7d591e979659c8663380109)
+        ;
+
+        
+    
+    
+            var marker_b962e8958edce69738991ec0888a32ee = L.marker(
+                [-8.14369, 110.6321],
+                {}
+            ).addTo(marker_cluster_496c4e75e17074dd51b4ae5c5c29eb97);
+        
+    
+        var popup_ce338ef127f335055f380bfa2d510916 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00d25a2a1a8b9ef49752abb1ad3d324a = $(`<div id="html_00d25a2a1a8b9ef49752abb1ad3d324a" style="width: 100.0%; height: 100.0%;">Pantai Slili: Jalan Pantai Krakal, Tepus, Kabupaten Gunungkidul</div>`)[0];
+                popup_ce338ef127f335055f380bfa2d510916.setContent(html_00d25a2a1a8b9ef49752abb1ad3d324a);
+            
+        
+
+        marker_b962e8958edce69738991ec0888a32ee.bindPopup(popup_ce338ef127f335055f380bfa2d510916)
+        ;
+
+        
+    
+    
+            var marker_66e0ed8cae49c513add5942fefc9b744 = L.marker(
+                [-8.1216, 110.5213],
+                {}
+            ).addTo(marker_cluster_496c4e75e17074dd51b4ae5c5c29eb97);
+        
+    
+        var popup_208f8d9de1f994e1fb7e8dee366d211a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4335c2400b8129b6ae80a90317afa5f7 = $(`<div id="html_4335c2400b8129b6ae80a90317afa5f7" style="width: 100.0%; height: 100.0%;">Pantai Midodaren: Kanigoro, Kec. Saptosari, Kabupaten Gunungkidul</div>`)[0];
+                popup_208f8d9de1f994e1fb7e8dee366d211a.setContent(html_4335c2400b8129b6ae80a90317afa5f7);
+            
+        
+
+        marker_66e0ed8cae49c513add5942fefc9b744.bindPopup(popup_208f8d9de1f994e1fb7e8dee366d211a)
+        ;
+
+        
+    
+    
+            var marker_7e93e20ba017757a8d9fd9a5b3ef1c84 = L.marker(
+                [-8.08027, 110.5571],
+                {}
+            ).addTo(marker_cluster_496c4e75e17074dd51b4ae5c5c29eb97);
+        
+    
+        var popup_a7ff0e6550f8366d376301807d9d04dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3e999bdf304fb22c7b6f94a88d6b08d = $(`<div id="html_c3e999bdf304fb22c7b6f94a88d6b08d" style="width: 100.0%; height: 100.0%;">Gua Maria Tritis: Jl. Sapto Sari Bulu, Paliyan, Gn. Kidul, Kabupaten Gunungkidul</div>`)[0];
+                popup_a7ff0e6550f8366d376301807d9d04dc.setContent(html_c3e999bdf304fb22c7b6f94a88d6b08d);
+            
+        
+
+        marker_7e93e20ba017757a8d9fd9a5b3ef1c84.bindPopup(popup_a7ff0e6550f8366d376301807d9d04dc)
+        ;
+
+        
+    
+    
+            var marker_94fa9402d3d5f76deb90579ae18f8c0b = L.marker(
+                [-8.05375, 110.5678],
+                {}
+            ).addTo(marker_cluster_496c4e75e17074dd51b4ae5c5c29eb97);
+        
+    
+        var popup_e871f9cc2ad23486b44a163dc1984dd3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62d571fe2a7f298e3782cb63f10d5db7 = $(`<div id="html_62d571fe2a7f298e3782cb63f10d5db7" style="width: 100.0%; height: 100.0%;">TEBING LEBENGAN: WHV9+V47, Ngasem, Kemiri, Kabupaten Gunungkidul</div>`)[0];
+                popup_e871f9cc2ad23486b44a163dc1984dd3.setContent(html_62d571fe2a7f298e3782cb63f10d5db7);
+            
+        
+
+        marker_94fa9402d3d5f76deb90579ae18f8c0b.bindPopup(popup_e871f9cc2ad23486b44a163dc1984dd3)
+        ;
+
+        
+    
+</script>
+</html>

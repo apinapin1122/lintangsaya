@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3bafcf389c01d30a4474e91efd238c20 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3bafcf389c01d30a4474e91efd238c20" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3bafcf389c01d30a4474e91efd238c20 = L.map(
+                "map_3bafcf389c01d30a4474e91efd238c20",
+                {
+                    center: [-8.147705, 110.614163],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3c3610a2a554409051ce4ca9486e6d24 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3bafcf389c01d30a4474e91efd238c20);
+        
+    
+            var heat_map_897614e6579722f1bd34d4a015cd0ab1 = L.heatLayer(
+                [[-7.933095, 110.615242], [-8.097895, 110.560226], [-8.009511, 110.598678], [-7.889823, 110.648112], [-8.119425, 110.577511], [-8.132425, 110.611424], [-7.949424, 110.611424], [-8.127551, 110.557788], [-8134497.0, 110.563432], [-8.147705, 110.614163]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_3bafcf389c01d30a4474e91efd238c20);
+        
+    
+            var marker_cluster_0f2a11386049273d7ca687afe2154fa8 = L.markerClusterGroup(
+                {}
+            );
+            map_3bafcf389c01d30a4474e91efd238c20.addLayer(marker_cluster_0f2a11386049273d7ca687afe2154fa8);
+        
+    
+            var marker_55ee95a62676e1ec9915a08273aa275e = L.marker(
+                [-7.933095, 110.615242],
+                {}
+            ).addTo(marker_cluster_0f2a11386049273d7ca687afe2154fa8);
+        
+    
+        var popup_5ac2156a9c27abe464fe993128bd574e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4463f3c03f8095f10746cdd4ee4c57c = $(`<div id="html_c4463f3c03f8095f10746cdd4ee4c57c" style="width: 100.0%; height: 100.0%;">Omah NgGunung:Jl. Dewandaru Jl. Madusari No.66, Madusari, Kepek, Kec. Wonosari, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55813</div>`)[0];
+                popup_5ac2156a9c27abe464fe993128bd574e.setContent(html_c4463f3c03f8095f10746cdd4ee4c57c);
+            
+        
+
+        marker_55ee95a62676e1ec9915a08273aa275e.bindPopup(popup_5ac2156a9c27abe464fe993128bd574e)
+        ;
+
+        
+    
+    
+            var marker_bf9abaa55e50663be4a6b3f638ac66ea = L.marker(
+                [-8.097895, 110.560226],
+                {}
+            ).addTo(marker_cluster_0f2a11386049273d7ca687afe2154fa8);
+        
+    
+        var popup_9deda5c4052f18e3b5aa432e1b4398f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ac1901aa902d2cca89cdad3d0d543a6 = $(`<div id="html_3ac1901aa902d2cca89cdad3d0d543a6" style="width: 100.0%; height: 100.0%;">Ama Awa Resort:Jl. Ke Puncak Tim., Rejosari, Kemadang, Kec. Tanjungsari, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55881</div>`)[0];
+                popup_9deda5c4052f18e3b5aa432e1b4398f7.setContent(html_3ac1901aa902d2cca89cdad3d0d543a6);
+            
+        
+
+        marker_bf9abaa55e50663be4a6b3f638ac66ea.bindPopup(popup_9deda5c4052f18e3b5aa432e1b4398f7)
+        ;
+
+        
+    
+    
+            var marker_c4cb1ebd723b216b35c234e8a4555174 = L.marker(
+                [-8.009511, 110.598678],
+                {}
+            ).addTo(marker_cluster_0f2a11386049273d7ca687afe2154fa8);
+        
+    
+        var popup_7c265a3c7d70dfeabd09db0d18eda1ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e9c87977a5a4a55b052a364b76d6344 = $(`<div id="html_9e9c87977a5a4a55b052a364b76d6344" style="width: 100.0%; height: 100.0%;">Orchid Inn Hotel:1 Jalan Wonosari - Baron, Mulo, Wonosari, Kabupaten Gunung Kidul Daerah Istimewa Yogyakarta, Indonesia Pindul Cave Yogyakarta Hotel near Telaga Jonge 4.2 km, Yogyakarta, Special Region of Yogyakarta 55851</div>`)[0];
+                popup_7c265a3c7d70dfeabd09db0d18eda1ca.setContent(html_9e9c87977a5a4a55b052a364b76d6344);
+            
+        
+
+        marker_c4cb1ebd723b216b35c234e8a4555174.bindPopup(popup_7c265a3c7d70dfeabd09db0d18eda1ca)
+        ;
+
+        
+    
+    
+            var marker_ad9cd4b1df1f4346b175ca5ba5013878 = L.marker(
+                [-7.889823, 110.648112],
+                {}
+            ).addTo(marker_cluster_0f2a11386049273d7ca687afe2154fa8);
+        
+    
+        var popup_dfadd50949861a14d62396084d9883d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6163a95bc4982f1bd17a0b05e8c68fab = $(`<div id="html_6163a95bc4982f1bd17a0b05e8c68fab" style="width: 100.0%; height: 100.0%;">Homestay Arva komplek pindul:Gelaran I, Bejiharjo, Kec. Karangmojo, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55891</div>`)[0];
+                popup_dfadd50949861a14d62396084d9883d1.setContent(html_6163a95bc4982f1bd17a0b05e8c68fab);
+            
+        
+
+        marker_ad9cd4b1df1f4346b175ca5ba5013878.bindPopup(popup_dfadd50949861a14d62396084d9883d1)
+        ;
+
+        
+    
+    
+            var marker_19eb5f730aca4365f186cbb89605aa0e = L.marker(
+                [-8.119425, 110.577511],
+                {}
+            ).addTo(marker_cluster_0f2a11386049273d7ca687afe2154fa8);
+        
+    
+        var popup_d6ce0e07c09e9c9f767ebb46ea2677de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54cf095b24cd0892fee97ac635b01138 = $(`<div id="html_54cf095b24cd0892fee97ac635b01138" style="width: 100.0%; height: 100.0%;">Drini Hills:VH9Q+8G4, Jl. Pantai Sel. Jawa, Wonosobo, Banjarejo, Kec. Tanjungsari, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55881</div>`)[0];
+                popup_d6ce0e07c09e9c9f767ebb46ea2677de.setContent(html_54cf095b24cd0892fee97ac635b01138);
+            
+        
+
+        marker_19eb5f730aca4365f186cbb89605aa0e.bindPopup(popup_d6ce0e07c09e9c9f767ebb46ea2677de)
+        ;
+
+        
+    
+    
+            var marker_78ed620deb2de64ed8265b629384d7cd = L.marker(
+                [-8.132425, 110.611424],
+                {}
+            ).addTo(marker_cluster_0f2a11386049273d7ca687afe2154fa8);
+        
+    
+        var popup_74308114a94cdc4cd32cb078d4a1608a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b59f0b11ec7d03646236ee8af86d4be = $(`<div id="html_5b59f0b11ec7d03646236ee8af86d4be" style="width: 100.0%; height: 100.0%;">Penginapan Sea View Sundak Indraprastha:Pule Gundes I, Sidoharjo, Kec. Tepus, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55881</div>`)[0];
+                popup_74308114a94cdc4cd32cb078d4a1608a.setContent(html_5b59f0b11ec7d03646236ee8af86d4be);
+            
+        
+
+        marker_78ed620deb2de64ed8265b629384d7cd.bindPopup(popup_74308114a94cdc4cd32cb078d4a1608a)
+        ;
+
+        
+    
+    
+            var marker_064681f5de43181f8a7e5e9239c7010a = L.marker(
+                [-7.949424, 110.611424],
+                {}
+            ).addTo(marker_cluster_0f2a11386049273d7ca687afe2154fa8);
+        
+    
+        var popup_f43c93c82b53143ac816cee8b484c556 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62fd4c2aff6684de0ceabeed0004cb05 = $(`<div id="html_62fd4c2aff6684de0ceabeed0004cb05" style="width: 100.0%; height: 100.0%;">OYO Life 3003 Wisma Handayani Syariah:Jl. Taman Bakti No.26, Jeruksari, Wonosari, Kec. Wonosari, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55813</div>`)[0];
+                popup_f43c93c82b53143ac816cee8b484c556.setContent(html_62fd4c2aff6684de0ceabeed0004cb05);
+            
+        
+
+        marker_064681f5de43181f8a7e5e9239c7010a.bindPopup(popup_f43c93c82b53143ac816cee8b484c556)
+        ;
+
+        
+    
+    
+            var marker_ddbcfa5b695a4e51409cbeccff3012bb = L.marker(
+                [-8.127551, 110.557788],
+                {}
+            ).addTo(marker_cluster_0f2a11386049273d7ca687afe2154fa8);
+        
+    
+        var popup_7089e8252535d1f3ca5766d0b828f613 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed99c428d40d07732ba598f2daa97d58 = $(`<div id="html_ed99c428d40d07732ba598f2daa97d58" style="width: 100.0%; height: 100.0%;">Hotel Kukup Indah:Kawasan Pantai Kukup, Jl. Pantai Sel. Jawa, Ngepung, Kemadang, Kec. Tanjungsari, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55881</div>`)[0];
+                popup_7089e8252535d1f3ca5766d0b828f613.setContent(html_ed99c428d40d07732ba598f2daa97d58);
+            
+        
+
+        marker_ddbcfa5b695a4e51409cbeccff3012bb.bindPopup(popup_7089e8252535d1f3ca5766d0b828f613)
+        ;
+
+        
+    
+    
+            var marker_635c09a26e9778c8b71378b33bc06aed = L.marker(
+                [-8134497.0, 110.563432],
+                {}
+            ).addTo(marker_cluster_0f2a11386049273d7ca687afe2154fa8);
+        
+    
+        var popup_1134a09192b98b619fde1f6426714454 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24ebf8c24b3f528ca6575f76949c225b = $(`<div id="html_24ebf8c24b3f528ca6575f76949c225b" style="width: 100.0%; height: 100.0%;">OYO 94017 Victouris Resort:VH77+HRC, Jalan Pantai Sepanjang, Ngalos, Kemadang, Wonosari, Gunung Kidul Regency, Special Region of Yogyakarta 55881</div>`)[0];
+                popup_1134a09192b98b619fde1f6426714454.setContent(html_24ebf8c24b3f528ca6575f76949c225b);
+            
+        
+
+        marker_635c09a26e9778c8b71378b33bc06aed.bindPopup(popup_1134a09192b98b619fde1f6426714454)
+        ;
+
+        
+    
+    
+            var marker_3b07986618d1ac3306c4979329d64d6e = L.marker(
+                [-8.147705, 110.614163],
+                {}
+            ).addTo(marker_cluster_0f2a11386049273d7ca687afe2154fa8);
+        
+    
+        var popup_279d365f412655a5a09edd16a475838c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3942e4d6d0625770adddf1f4632a49ee = $(`<div id="html_3942e4d6d0625770adddf1f4632a49ee" style="width: 100.0%; height: 100.0%;">Penginapan Putra Darma:Jl. Pantai Sel. Jawa, Pantai, Tepus, Kec. Tepus, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55881</div>`)[0];
+                popup_279d365f412655a5a09edd16a475838c.setContent(html_3942e4d6d0625770adddf1f4632a49ee);
+            
+        
+
+        marker_3b07986618d1ac3306c4979329d64d6e.bindPopup(popup_279d365f412655a5a09edd16a475838c)
+        ;
+
+        
+    
+</script>
+</html>

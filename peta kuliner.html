@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_54a6d66d151f7aff97b3e2e1202473ed {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_54a6d66d151f7aff97b3e2e1202473ed" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_54a6d66d151f7aff97b3e2e1202473ed = L.map(
+                "map_54a6d66d151f7aff97b3e2e1202473ed",
+                {
+                    center: [-8.11246, 110.512578],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7117349ef5ebc75e872dd16e7a268ffc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_54a6d66d151f7aff97b3e2e1202473ed);
+        
+    
+            var heat_map_1735218a938bde2fce12b5be9f7713f2 = L.heatLayer(
+                [[-8.148981299, 110.6788927], [-8.143543563, 110.6146914], [-8.130347485, 110.5788075], [-8.124236795, 110.5637187], [-8.131931722, 110.5696628], [-8.140305446, 110.6085278], [-8.058371252, 110.6576807], [-7.985610361, 110.6503727], [-8.038715069, 110.5103435], [-8.11246007, 110.512578]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 15}
+            ).addTo(map_54a6d66d151f7aff97b3e2e1202473ed);
+        
+    
+            var marker_cluster_c868e9d97313efc24471bb223cb9f201 = L.markerClusterGroup(
+                {}
+            );
+            map_54a6d66d151f7aff97b3e2e1202473ed.addLayer(marker_cluster_c868e9d97313efc24471bb223cb9f201);
+        
+    
+            var marker_63e373286aaab842ba405efe1613c656 = L.marker(
+                [-8.148981299, 110.6788927],
+                {}
+            ).addTo(marker_cluster_c868e9d97313efc24471bb223cb9f201);
+        
+    
+        var popup_2a3ab12b4dbe975d56d68cc678050509 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f2cd0bae6ac998985cdd50fe7e46784 = $(`<div id="html_6f2cd0bae6ac998985cdd50fe7e46784" style="width: 100.0%; height: 100.0%;">Kedai Lobster Pak Sis Timang:salam luwengombo jln pantai, timang, Purwodadi, Kec. Tepus, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55881</div>`)[0];
+                popup_2a3ab12b4dbe975d56d68cc678050509.setContent(html_6f2cd0bae6ac998985cdd50fe7e46784);
+            
+        
+
+        marker_63e373286aaab842ba405efe1613c656.bindPopup(popup_2a3ab12b4dbe975d56d68cc678050509)
+        ;
+
+        
+    
+    
+            var marker_edc7e8129fbd3c11b68d81101ed69dd6 = L.marker(
+                [-8.143543563, 110.6146914],
+                {}
+            ).addTo(marker_cluster_c868e9d97313efc24471bb223cb9f201);
+        
+    
+        var popup_ddc5c570f411fd17ccf504382e1126ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b81d66a2f3add8ecc7ce90e81fff0a19 = $(`<div id="html_b81d66a2f3add8ecc7ce90e81fff0a19" style="width: 100.0%; height: 100.0%;">Resto Indrayanti GK Yogyakarta Indonesia:Pantai, Tepus, Kec. Tepus, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55881</div>`)[0];
+                popup_ddc5c570f411fd17ccf504382e1126ab.setContent(html_b81d66a2f3add8ecc7ce90e81fff0a19);
+            
+        
+
+        marker_edc7e8129fbd3c11b68d81101ed69dd6.bindPopup(popup_ddc5c570f411fd17ccf504382e1126ab)
+        ;
+
+        
+    
+    
+            var marker_7aa7ddc536b22c5fbd5344fd5c014876 = L.marker(
+                [-8.130347485, 110.5788075],
+                {}
+            ).addTo(marker_cluster_c868e9d97313efc24471bb223cb9f201);
+        
+    
+        var popup_7dcb7ed43805e416fc7c2a1d642f4e93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b62e88e48dfdd753e378c2bc1e571d1a = $(`<div id="html_b62e88e48dfdd753e378c2bc1e571d1a" style="width: 100.0%; height: 100.0%;">Pondok Makan Mutiara Seafood Bu Ning:Jl. Drini Tim., Wonosobo, Banjarejo, Kec. Tanjungsari, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55881</div>`)[0];
+                popup_7dcb7ed43805e416fc7c2a1d642f4e93.setContent(html_b62e88e48dfdd753e378c2bc1e571d1a);
+            
+        
+
+        marker_7aa7ddc536b22c5fbd5344fd5c014876.bindPopup(popup_7dcb7ed43805e416fc7c2a1d642f4e93)
+        ;
+
+        
+    
+    
+            var marker_d40388cbd9ff2175d1d51ea7536d05d3 = L.marker(
+                [-8.124236795, 110.5637187],
+                {}
+            ).addTo(marker_cluster_c868e9d97313efc24471bb223cb9f201);
+        
+    
+        var popup_0e9d559ea58cb3d0eb006219cc3da106 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_391d510fb7b6c73520970c85299de5fe = $(`<div id="html_391d510fb7b6c73520970c85299de5fe" style="width: 100.0%; height: 100.0%;">Rumah Makan Lesehan Griyo Wono:Ngalos, Kemadang, Kec. Tanjungsari, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55881</div>`)[0];
+                popup_0e9d559ea58cb3d0eb006219cc3da106.setContent(html_391d510fb7b6c73520970c85299de5fe);
+            
+        
+
+        marker_d40388cbd9ff2175d1d51ea7536d05d3.bindPopup(popup_0e9d559ea58cb3d0eb006219cc3da106)
+        ;
+
+        
+    
+    
+            var marker_e4b63b349eba437d2dcddcdd7eec4cb2 = L.marker(
+                [-8.131931722, 110.5696628],
+                {}
+            ).addTo(marker_cluster_c868e9d97313efc24471bb223cb9f201);
+        
+    
+        var popup_6cbbd96e907fbe76ff0bfb82ca454a94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78f7570c445c05bf9f3d9888921a3fbd = $(`<div id="html_78f7570c445c05bf9f3d9888921a3fbd" style="width: 100.0%; height: 100.0%;">Rumah Makan Sepanjang Indah:Jl. Sepanjang, Ngalos, Kemadang, Kec. Tanjungsari, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55881</div>`)[0];
+                popup_6cbbd96e907fbe76ff0bfb82ca454a94.setContent(html_78f7570c445c05bf9f3d9888921a3fbd);
+            
+        
+
+        marker_e4b63b349eba437d2dcddcdd7eec4cb2.bindPopup(popup_6cbbd96e907fbe76ff0bfb82ca454a94)
+        ;
+
+        
+    
+    
+            var marker_adaa037726246badeb92f670effb7c86 = L.marker(
+                [-8.140305446, 110.6085278],
+                {}
+            ).addTo(marker_cluster_c868e9d97313efc24471bb223cb9f201);
+        
+    
+        var popup_3887ffafcddf49f689053355a3651397 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8291f5eedc8ff6cd227b2b7d0e9640b = $(`<div id="html_f8291f5eedc8ff6cd227b2b7d0e9640b" style="width: 100.0%; height: 100.0%;">Resto JOGO SEGORO Seafood:Jl. Pantai Sel. Jawa, Pule Gundes II, Sidoharjo, Kec. Tepus, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55881</div>`)[0];
+                popup_3887ffafcddf49f689053355a3651397.setContent(html_f8291f5eedc8ff6cd227b2b7d0e9640b);
+            
+        
+
+        marker_adaa037726246badeb92f670effb7c86.bindPopup(popup_3887ffafcddf49f689053355a3651397)
+        ;
+
+        
+    
+    
+            var marker_d781494746eff973dcacac17d4b9d84c = L.marker(
+                [-8.058371252, 110.6576807],
+                {}
+            ).addTo(marker_cluster_c868e9d97313efc24471bb223cb9f201);
+        
+    
+        var popup_06bac3249d1f4b1f214d81ebdf39d363 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_429b506479253b6469be155591a895e1 = $(`<div id="html_429b506479253b6469be155591a895e1" style="width: 100.0%; height: 100.0%;">Kuliner & Rest Area Pakistan:WMP4+XVQ, Panggul Tengah, Candirejo, Kec. Semanu, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta</div>`)[0];
+                popup_06bac3249d1f4b1f214d81ebdf39d363.setContent(html_429b506479253b6469be155591a895e1);
+            
+        
+
+        marker_d781494746eff973dcacac17d4b9d84c.bindPopup(popup_06bac3249d1f4b1f214d81ebdf39d363)
+        ;
+
+        
+    
+    
+            var marker_6b7dc72974a89f239948ab7de568f82d = L.marker(
+                [-7.985610361, 110.6503727],
+                {}
+            ).addTo(marker_cluster_c868e9d97313efc24471bb223cb9f201);
+        
+    
+        var popup_b336bc1cb2e10ed734ecc463a26996c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_108c97d91985e3f13d01ac3d377dd427 = $(`<div id="html_108c97d91985e3f13d01ac3d377dd427" style="width: 100.0%; height: 100.0%;">Lesehan Nasi Merah Pari Gogo:2M32+537, Munggi Ps., Semanu, Kec. Semanu, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55893</div>`)[0];
+                popup_b336bc1cb2e10ed734ecc463a26996c9.setContent(html_108c97d91985e3f13d01ac3d377dd427);
+            
+        
+
+        marker_6b7dc72974a89f239948ab7de568f82d.bindPopup(popup_b336bc1cb2e10ed734ecc463a26996c9)
+        ;
+
+        
+    
+    
+            var marker_596e8952277ab5248e998e82bcf27131 = L.marker(
+                [-8.038715069, 110.5103435],
+                {}
+            ).addTo(marker_cluster_c868e9d97313efc24471bb223cb9f201);
+        
+    
+        var popup_1c7a3b04a771896ebc32c7a13af0c278 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6421959731379e7b365f19d307c07126 = $(`<div id="html_6421959731379e7b365f19d307c07126" style="width: 100.0%; height: 100.0%;">OMAH SOP JAWA SUNDA ( RESTO & HOME STAY SYARI'AH):Jl. Raya Panggang Wonosari, Kepek, Kec. Saptosari, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55871</div>`)[0];
+                popup_1c7a3b04a771896ebc32c7a13af0c278.setContent(html_6421959731379e7b365f19d307c07126);
+            
+        
+
+        marker_596e8952277ab5248e998e82bcf27131.bindPopup(popup_1c7a3b04a771896ebc32c7a13af0c278)
+        ;
+
+        
+    
+    
+            var marker_0ca4921710bd0f8760270ece5c0b96d2 = L.marker(
+                [-8.11246007, 110.512578],
+                {}
+            ).addTo(marker_cluster_c868e9d97313efc24471bb223cb9f201);
+        
+    
+        var popup_9d1acdb5007bb3d218975842010a6af1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c68b928d9983e18d615c3da8de04fcb = $(`<div id="html_8c68b928d9983e18d615c3da8de04fcb" style="width: 100.0%; height: 100.0%;">Warung Makan MINAKU:VGH7+RGP, Jl. Ngrenehan, Kanigoro, Kec. Saptosari, Kabupaten Gunung Kidul, Daerah Istimewa Yogyakarta 55871</div>`)[0];
+                popup_9d1acdb5007bb3d218975842010a6af1.setContent(html_8c68b928d9983e18d615c3da8de04fcb);
+            
+        
+
+        marker_0ca4921710bd0f8760270ece5c0b96d2.bindPopup(popup_9d1acdb5007bb3d218975842010a6af1)
+        ;
+
+        
+    
+</script>
+</html>
